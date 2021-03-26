@@ -10,7 +10,8 @@ body {
 }
 h1 {
   text-align: center;
-  background-color: white;
+  background-color: #88888860;
+  color: white;
 }
 caption {
   color: #ffffff;
