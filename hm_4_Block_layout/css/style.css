@@ -1,0 +1,70 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/lato-v17-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/lato-v17-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/lato-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''), url('../fonts/lato-v17-latin-900.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/lato-v17-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+  box-sizing: border-box;
+}
+/*всі елементи, псевдоелемент before у всіх елементів, псевдоелемент after у всіх елементів */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /*inherit - наслідувати від родителя*/
+}
+body {
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #ffffff;
+}
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #d52047;
+}
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap; /* відповідає за перенос контенту (при заповненні рядка контентом він переноситься)*/
+}
+.footer {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.footer_wrapper {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_item {
+  margin-right: 180px;
+}
